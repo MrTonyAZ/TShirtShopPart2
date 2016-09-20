@@ -1,0 +1,440 @@
+
+* {
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+.test {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.panel1, .panel2, .panel3, .panel4, .panel5, .panel6, .panel7, .panel8, .panel9, .panel10, .panel11, .panel12 {
+  float: left;
+  width: 23%;
+  margin: 1%;
+}
+
+.display {
+  position: relative;;
+  float: left;
+  overflow: hidden;
+  width: 100%;
+  height: 19em;
+  border: 0.1875em solid #5ca4d6;
+}
+
+.shirt {
+  position: relative;;
+  width: 80%;
+  height: 80%;
+  margin: 2em 0 0 1em;
+
+}
+
+.rotateButton {
+  float: right;
+  width: 2em;
+  height: 2em;
+  border-left: 0.1875em solid #5ca4d6;
+  border-bottom: 0.1875em solid #5ca4d6;
+  color: #5ca4d6;
+  background: white;
+}
+
+.rotateButton > p {
+  margin: 0.5em auto;
+  text-align: center;
+}
+
+.menuTray {
+  clear: both;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 3em;
+  border-left: 0.1875em solid #5ca4d6;
+  border-bottom: 0.1875em solid #5ca4d6;
+}
+
+.box1, .box2, .box3, .box4, .box5 {
+  float: left;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 20%;
+  height: 100%;
+  border-right: 0.1875em solid #5ca4d6;
+  text-align: center;
+  font-family: Lucida Console, Monaco, monospace;
+  color: #5ca4d6;
+}
+
+.color1, .color2, .color3, .color4 {
+  width: 1.85em;
+  height: 1.85em;
+  border: 0.1875em solid white;
+  margin: 0.575em auto;
+}
+
+.color1 {
+  background: #81bce5;
+}
+
+.color2 {
+  background: #d583ac;
+}
+
+.color3 {
+  background: #deb17e;
+}
+
+.color4 {
+  background: #8bb992;
+}
+
+.textTray {
+  clear: both;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 3em;
+}
+
+.textTray > h3 {
+  display: inline-block;
+  padding-top: .5em;
+  padding-left: .3em;
+  margin: 0;
+  color: #5ca4d6;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.productPrice1, .productPrice2, .productPrice3 {
+  float: right;
+  padding-right: .3em;
+  font-weight: bold;
+}
+
+.sizeMenu {
+  position: relative;
+  width: 4.25em;
+  height: 10em;
+  padding: 0.74em;
+  background: white;
+  border: 0.1875em solid #5ca4d6;
+  left: -0.2em;
+  top: -14.3em;
+  transition: top .3s ease-in, opacity .5s;
+  opacity: 0;
+}
+
+.colorMenu {
+  position: relative;;
+  width: 4.1em;
+  height: 4.1em;
+  background: white;
+  border: 0.1875em solid #5ca4d6;
+  left: -0.2em;
+  top: -8em;
+  transition: top .3s ease-in, opacity .5s;
+  opacity: 0;
+}
+
+.colorMenu div {
+  float: left;
+  overflow: hidden;
+  margin: 0;
+}
+
+.sizeTriangleDown, .sizeTriangleDown2, .colorTriangleDown, .colorTriangleDown2 {
+  position: absolute;
+  border-style: solid;
+  border-width: 1em .5em 0 .5em;
+  border-left: 10px solid #5ca4d6;
+  border-right: 10px solid #5ca4d6;
+  border-color: #5ca4d6 transparent transparent transparent;
+  transition: top .3s ease-in, opacity 0s;
+}
+
+.sizeTriangleDown, .sizeTriangleDown2 {
+  left: 1.4em;
+  top: 9.7em;
+}
+
+.colorTriangleDown, .colorTriangleDown2 {
+  left: 1.28em;
+  top: 3.8em;
+}
+
+.sizeTriangleDown2 {
+  top: 9.4em;
+  border-color: white transparent transparent transparent;
+}
+
+.colorTriangleDown2 {
+  top: 3.5em;
+  border-color: white transparent transparent transparent;
+}
+
+.sizeXL, .sizeL, .sizeM, .sizeS {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 1em;
+  text-align: center;
+  color: #5ca4d6;
+}
+
+.XLtag, .Ltag, .Mtag, .Stag {
+  position: relative;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 1em;
+  text-align: center;
+  top: -1.3em;
+  color: #5ca4d6;
+}
+
+.XLtag {
+  font-size: 1em;
+}
+
+.Ltag {
+  font-size: 0.85em;
+}
+
+.Mtag {
+  font-size: 0.70em;
+}
+
+.Stag {
+  font-size: 0.65em;
+}
+
+.sizeXL {
+  font-size: xx-large;
+}
+
+.sizeL {
+  font-size: x-large;
+}
+
+.sizeM {
+  font-size: large;
+}
+
+.sizeS {
+  font-size: medium;
+}
+
+.box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .rotateButton:hover {
+  background-color: #5ca4d6;
+  color: white;
+  opacity: 1;
+}
+
+.box4:hover .colorMenu{
+  top: -7.2em;
+  opacity: 1;
+}
+
+.box3:hover .sizeMenu {
+  top: -13.1em;
+  opacity: 1;
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+  .panel1, .panel2, .panel3, .panel4, .panel5, .panel6, .panel7, .panel8, .panel9, .panel10, .panel11, .panel12   {
+    width: 31%;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .panel1, .panel2, .panel3, .panel4, .panel5, .panel6, .panel7, .panel8, .panel9, .panel10, .panel11, .panel12   {
+    width: 31%;
+  }
+
+  .display {
+    height: 17em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  .panel1, .panel2, .panel3, .panel4, .panel5, .panel6, .panel7, .panel8, .panel9, .panel10, .panel11, .panel12   {
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .panel1, .panel2, .panel3, .panel4, .panel5, .panel6, .panel7, .panel8, .panel9, .panel10, .panel11, .panel12   {
+    width: 48%;
+  }
+
+  .display {
+    height: 13em;
+  }
+
+  .sizeMenu {
+    position: relative;
+    width: 11em;
+    height: 10em;
+    padding: 0.74em;
+    background: white;
+    border: 0.1875em solid #5ca4d6;
+    left: -4em;
+    top: -12em;
+    transition: opacity .5s;
+    opacity: 0;
+  }
+  .sizeTriangleDown, .sizeTriangleDown2 {
+    display: none;
+  }
+  .box3:hover .sizeMenu {
+    opacity: 1;
+  }
+
+  .colorMenu {
+    position: relative;
+    width: 11em;
+    height: 10em;
+    background: white;
+    border: 0.1875em solid #5ca4d6;
+    left: -7.7em;
+    top: -19em;
+    transition: opacity .5s;
+    opacity: 0;
+  }
+
+  .color1, .color2, .color3, .color4 {
+    width: 5.3em;
+    height: 4.85em;
+  }
+  .color1 {
+    background: #81bce5;
+  }
+
+  .color2 {
+    background: #d583ac;
+  }
+
+  .color3 {
+    background: #deb17e;
+  }
+
+  .color4 {
+    background: #8bb992;
+  }
+
+  .box4 > .color1, .box4 > .color2, .box4 > .color3, .box4 > .color4 {
+    width: 1.85em;
+    height: 1.85em;
+    border: 0.1875em solid white;
+    margin: 0.575em auto;
+  }
+
+
+  .colorTriangleDown, .colorTriangleDown2 {
+    display: none;
+  }
+
+  .box4.color1 {
+    visibility: hidden;
+  }
+
+  .box4:hover .colorMenu{
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+  .panel1, .panel2, .panel3, .panel4, .panel5, .panel6, .panel7, .panel8, .panel9, .panel10, .panel11, .panel12   {
+    width: 70%;
+    margin: 1% 15%;
+  }
+
+  .display {
+    height: 13em;
+  }
+  .sizeMenu {
+    position: relative;
+    width: 11em;
+    height: 10em;
+    padding: 0.74em;
+    background: white;
+    border: 0.1875em solid #5ca4d6;
+    left: -4em;
+    top: -12em;
+    transition: opacity .5s;
+    opacity: 0;
+  }
+  .sizeTriangleDown, .sizeTriangleDown2 {
+    display: none;
+  }
+  .box3:hover .sizeMenu {
+    opacity: 1;
+  }
+
+  .colorMenu {
+    position: relative;
+    width: 11em;
+    height: 10em;
+    background: white;
+    border: 0.1875em solid #5ca4d6;
+    left: -7.7em;
+    top: -19em;
+    transition: opacity .5s;
+    opacity: 0;
+  }
+
+  .color1, .color2, .color3, .color4 {
+    width: 5.3em;
+    height: 4.85em;
+  }
+  .color1 {
+    background: #81bce5;
+  }
+
+  .color2 {
+    background: #d583ac;
+  }
+
+  .color3 {
+    background: #deb17e;
+  }
+
+  .color4 {
+    background: #8bb992;
+  }
+
+  .box4 > .color1, .box4 > .color2, .box4 > .color3, .box4 > .color4 {
+    width: 1.85em;
+    height: 1.85em;
+    border: 0.1875em solid white;
+    margin: 0.575em auto;
+  }
+
+
+  .colorTriangleDown, .colorTriangleDown2 {
+    display: none;
+  }
+
+  .box4.color1 {
+    visibility: hidden;
+  }
+
+  .box4:hover .colorMenu{
+    opacity: 1;
+  }
+}
